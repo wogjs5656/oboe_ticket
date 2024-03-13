@@ -13,13 +13,29 @@
 - 포인트: 포인트 추가, 차감, 내 포인트 조회, 포인트 사용 내역 조회
 
 # 🔒환경변수
+
+
 DB_HOST=
+
+
 DB_PORT=
+
+
 DB_USERNAME=
+
+
 DB_PASSWORD=
+
+
 DB_NAME=
+
+
 DB_SYNC=
+
+
 JWT_SECRET_KEY=
+
+
 
 # 패키지
 - npm
