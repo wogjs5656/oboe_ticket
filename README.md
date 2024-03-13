@@ -52,4 +52,5 @@ JWT_SECRET_KEY=
 - TS
 - NestJS
 - TypeORM
+- Swagger
 - JWT
