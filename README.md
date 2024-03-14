@@ -20,6 +20,27 @@
 - [ ]  사용자 보유 포인트 모자른 경우 예매x
 - [ ]  예매 취소시 지불한 포인트 환불하기
 
+
+### 프로젝트 접속 경로
+#User
+- http://localhost:3000/apis (스웨거 주소)
+- localhost:3000/user/register (Role.User) 회원가입
+- localhost:3000/user/register/admin (Role.Admin) 회원가입
+- localhost:3000/user/login 로그인
+- localhost:3000/user/1 사용자 정보조회 (포인트 조회 가능)
+
+#Show
+- localhost:3000/shows 공연 생성
+- localhost:3000/shows 공연 조회
+- localhost:3000/shows/1 공연 상세조회
+- localhost:3000/shows/serch/search?keyword= 공연 검색
+
+#Reservation
+- localhost:3000/reserve/1 공연 예약
+- localhost:3000/reserve/1/5 예약 취소
+- localhost:3000/reserve/findRes/1 예약한 공연 조회
+
+
 # 🔒환경변수
 
 
