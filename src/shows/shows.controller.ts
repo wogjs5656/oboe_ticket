@@ -43,7 +43,7 @@ export class ShowsController {
 
   @ApiOperation({
     summary: '공연 검색 API',
-    description: '마지막에 오류 나서 사용이 안됩니다',
+    description: 'shows/serch/search?keyword=이 검색 경로입니다.',
   })
   @Get('serch/search')
   async searchForShows(@Query('keyword') keyword: string) {
