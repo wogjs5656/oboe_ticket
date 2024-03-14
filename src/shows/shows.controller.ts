@@ -45,9 +45,9 @@ export class ShowsController {
     summary: '공연 검색 API',
     description: '마지막에 오류 나서 사용이 안됩니다',
   })
-  @Get('search')
+  @Get('serch/search')
   async searchForShows(@Query('keyword') keyword: string) {
-      const resultShow = await this.showsService.serchForShows(keyword);
+      const resultShow = await this.showsService.searchForShows(keyword);
       return resultShow;
     }
 

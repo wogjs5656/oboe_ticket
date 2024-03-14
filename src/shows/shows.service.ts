@@ -65,7 +65,7 @@ export class ShowsService {
 
 
     // 키워드 인자를 입력받아 검색하기
-    async serchForShows(keyword: string) {
+    async searchForShows(keyword: string) {
         if (!keyword.trim()) {
             throw new BadRequestException('검색어가 비어있습니다.');
         }

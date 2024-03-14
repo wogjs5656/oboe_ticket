@@ -90,7 +90,10 @@ export class ReserveService {
 
       await queryRunner.manager.save(Reserve, reserve);
       await queryRunner.commitTransaction();
-      return reserve;
+      return {
+        message: '예약에 성공하였습니다.',
+        reserve
+      };
     } catch (err) {
       await queryRunner.rollbackTransaction();
       throw err;
@@ -144,7 +147,10 @@ export class ReserveService {
 
       await queryRunner.commitTransaction();
 
-      return reserves;
+      return {
+        message: '예약을 취소하였습니다.',
+        reserves,
+      }
     } catch (err) {
       await queryRunner.rollbackTransaction();
       throw err;
